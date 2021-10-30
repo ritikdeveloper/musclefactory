@@ -352,13 +352,59 @@ header .ham-burger.active span:nth-child(2){
 .price-package .content .box .inner .img img{
 	width: 100%;
 }
+/*Additionals facilities*/
+.additionals-package{
+	padding: 80px 0px;
+	background-color: #222222
+}
+.additionals-package h2{
+	font-size: 30px;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 0px 0px 20px;
+	text-align: center;
+}
 
 
+.additionals-package .content{
+	-webkit-display: flex;
+	display: flex;
+	 margin: auto;
+  padding: 10px;
+}
+.additionals-package .content .box{
+	flex:0 0 53.33%;
+	max-width: 33.33%;
+	padding: 30px; 
+	margin-left:auto;
+	margin-right:auto;
+}
+.additionals-package .content .box .inner{
+	color:#222222;;
+	
+}
+
+.additionals-package .content .box .inner .text h3{
+	font-size: 24px;
+	color:#ffffff;
+	text-align:center;
+	
+	padding:0px 0px 20px;
+	font-weight: 700;
+}
+
+.additionals-package .content .box .inner .img img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
 /*Contact Section*/
 
 .contact{
 	padding:80px 0px;
-	background-color: #222222;
+	background-color: #ffffff;
 }
 
 .contact .content{
@@ -379,25 +425,17 @@ header .ham-burger.active span:nth-child(2){
     color: #c11325;
     padding: 0px 0px 20px;
 }
-.contact .content .text p{
-    font-size: 15px;
-    line-height: 20px;
-    color: #ffffff;
-    margin: 0;
-    padding: 0px 0px 30px;
-    font-family: 'Open-sans', sans-serif;
-}
-
 .contact .content .text .info ul{
 	list-style: none;
 	padding:0;
 	margin:0;
+
 }
 
 .contact .content .text .info li{
 	display: block;
 	margin-bottom: 15px;
-	color:#ffffff;
+	color:#222222;
 	font-size: 15px;
 	letter-spacing: 1px;
 	position: relative;
@@ -429,7 +467,7 @@ header .ham-burger.active span:nth-child(2){
 } 
 
 .contact .content .text .social a:hover{
-	background-color: transparent;
+	background-color: #000000;
     border-color: #ffffff;
 }
 
@@ -447,6 +485,7 @@ header .ham-burger.active span:nth-child(2){
 /*if screen width is less than or equal to 991px then*/
 @media(max-width: 991px){
    .home{
+	background-image: url('../images/homemobile.jpg');
    	background-position: center;
    }
   .classes .content{
