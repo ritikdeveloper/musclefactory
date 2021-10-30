@@ -1,138 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Muscle Factory Gym</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-    .wow:first-child {
-      visibility: hidden;
-    }
-  </style>
-  
+    <title>Muscle Factory Gym</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .wow:first-child {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
+
 <body>
- 
- <!-- Start Header  -->
- <header>
- 	 <div class="container">
- 	 	<div class="logo">
- 	 		 <a href="">Muscle <span>Factory</span></a>
-			 <a href="index.html">Home</a>
-			 <a href="aboutus.html"><span>About </span>us</a>
-			 <a href="membership.html">Buy <span>Membership</span></a>
- 	 	</div>
- 	 	<a href="javascript:void(0)" class="ham-burger">
- 	       <span></span>	
- 	       <span></span>
- 	 	</a>
- 	 	<div class="nav">
- 	 		<ul>
- 	 			<li><a href="#home">Home</a></li>
- 	 	
- 	 			<li><a href="index.html">Workout Gallery</a></li>
-				<li><a href="index.html">Facilities</a></li>
-				<li><a href="index.html">Packages</a></li>
- 	 			<li><a href="index.html">Contact</a></li>
- 	 		</ul>
- 	 	</div>
- 	 </div>
- </header>
+
+    <!-- Start Header  -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Muscle <span>Factory</span></a>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"><span>About </span>us</a>
+                <a href="membership.html">Buy <span>Membership</span></a>
 
 
-
-
- <!-- Start Contact -->
-  <section class="contact" id="contact">
-     <div class="container">
-        <div class="content">
-            <div class="box form wow slideInLeft">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d879.0464415972731!2d76.8409096292009!3d28.201668098911846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d37e93bd0621f%3A0x516b02ef04c4c9a9!2sSector%2010%2C%20U.I.T.%2C%20Bhiwadi%2C%20Rajasthan%20301019!5e0!3m2!1sen!2sin!4v1635595989887!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-     <div class="container">
-        <div class="content">
-           
-            <div class="box text wow slideInRight">
-                 <h2>Contact us</h2>
-                  
-                  <div class="info">
-                      <ul>
-                          <li><span class="fa fa-map-marker"></span> 6/18 UIT, NEAR SBI BANK, BHIWADI</li>
-                          <li><span class="fa fa-phone"></span> +91 8529605855</li>
-                          <li><span class="fa fa-envelope"></span> musclefactorygymbhiwadi@gmail.com</li>
-                      </ul>
-                  </div>
-                  <div class="social">
-                       <a href="https://www.instagram.com/muscle_factory_gym_bhiwadi/"><span class="fa fa-linkedin"> </span></a>
-                  
-                  </div>
-            </div>
-        </div>
-     </div>
-	  
-  </section>
- <!-- End Contact -->
+    </header>
 
 
 
- <!-- jquery -->
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function(){
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="content">
+                <div id="map">
+                    <div class="box form wow slideInLeft">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1758.0928443541206!2d76.84036245799867!3d28.20167045945213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d37e93bd0621f%3A0x516b02ef04c4c9a9!2sSector%2010%2C%20U.I.T.%2C%20Bhiwadi%2C%20Rajasthan%20301019!5e0!3m2!1sen!2sin!4v1635616076831!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-      $(".ham-burger, .nav ul li a").click(function(){
-       
-        $(".nav").toggleClass("open")
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content">
 
-        $(".ham-burger").toggleClass("active");
-      })      
-      $(".accordian-container").click(function(){
-      	$(".accordian-container").children(".body").slideUp();
-      	$(".accordian-container").removeClass("active")
-      	$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
-      	$(this).children(".body").slideDown();
-      	$(this).addClass("active")
-      	$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
-      })
+                        <div class="box text wow slideInRight">
+                            <h2>Contact us</h2>
 
-       $(".nav ul li a, .go-down").click(function(event){
-         if(this.hash !== ""){
+                            <div class="info">
+                                <ul>
+                                    <li><span class="fa fa-map-marker"></span> 6/18 UIT, NEAR SBI BANK, BHIWADI</li>
+                                    <li><span class="fa fa-phone"></span> +91 8529605855</li>
+                                    <li><span class="fa fa-envelope"></span> musclefactorygymbhiwadi@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="social">
+                                <a href="https://www.instagram.com/muscle_factory_gym_bhiwadi/"><span class="fa fa-instagram"> </span></a>
 
-              event.preventDefault();
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              var hash=this.hash; 
+    </section>
+    <!-- End Contact -->
 
-              $('html,body').animate({
-                scrollTop:$(hash).offset().top
-              },800 , function(){
-                 window.location.hash=hash;
-              });
 
-              // add active class in navigation
-              $(".nav ul li a").removeClass("active")
-              $(this).addClass("active")
-         }
-      })
-})
 
-</script>
-<script src="js/wow.min.js"></script>
-<script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       0,
-      }
-    );
-    wow.init();
-  </script>
+    <!-- jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".ham-burger, .nav ul li a").click(function() {
+
+                $(".nav").toggleClass("open")
+
+                $(".ham-burger").toggleClass("active");
+            })
+            $(".accordian-container").click(function() {
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
+
+            $(".nav ul li a, .go-down").click(function(event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html,body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+
+                    // add active class in navigation
+                    $(".nav ul li a").removeClass("active")
+                    $(this).addClass("active")
+                }
+            })
+        })
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 0,
+        });
+        wow.init();
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
